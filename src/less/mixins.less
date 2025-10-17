@@ -1,0 +1,24 @@
+.gradient-metal(@color1, @color2) {
+    background: linear-gradient(135deg, @color1, @color2);
+}
+
+.btn-style(@bg: @accent) {
+    display: inline-block;
+    padding: 12px 24px;
+    color: @light-text;
+    text-decoration: none;
+    border-radius: @radius;
+    background: @bg;
+    box-shadow: @shadow;
+    transition: all 0.3s;
+&:hover {
+    background: lighten(@bg, 10%);
+    transform: scale(1.05);
+}
+}
+
+.center-content() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
